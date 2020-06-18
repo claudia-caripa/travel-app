@@ -1,0 +1,14 @@
+footer{
+    grid-area: ft;
+    height: 60px;
+    width: 100%;
+    background-color: #48A9A6;
+    color: #FFF;
+    padding-top: 20px;
+    margin-top: 20px; /* space between main and footer */
+    /* Set footer at bottom */
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+}

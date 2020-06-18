@@ -1,0 +1,21 @@
+header{
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    background: #4357AD;
+    color: #FFF;
+    padding: 10px;
+    margin: 0;
+    align-items: baseline;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li{
+    margin: 0;
+    margin-left: 15px;
+}

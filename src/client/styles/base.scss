@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#app{
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+    grid-gap: 30px;
+    line-height: 1.5em;
+}
+
+main{
+    padding: 15px;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.holder{
+    height: auto;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    line-height: 3em;
+}
+
+.trip-info{
+    font-size: 20px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+label{
+    font-size: 30px;
+}
+
+button{
+    font-size: 25px;
+    font-weight: bold;
+    color: #48A9A6;
+    background-color: lightgray;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    outline: none;
+
+    &:hover{
+        background: #4357AD;
+    }
+}
+
+#city, #departing{
+    font-weight: bold;
+    font-size: larger;
+}
+
+#weather{
+    color: gray;
+    line-height: 1em;
+}
+
+.responsive{
+    display: flex;
+    width: 500px;
+    height: auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Travel App</title>
+    </head>
+    
+    <body>
+        <div id= "app">
+
+            <header>
+                <h1>Travel Planner</h1>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                    </ul>
+                </nav>
+            </header><!-- end header-->
+
+            <main>
+                <section class="holder">
+                    <div class="location">
+                        <label for="location">My trip to: </label>
+                        <input type="text" id="location" placeholder="Enter Location" class="trip-info">
+                    </div>
+                    <div class="date">
+                        <label for="date">Departing</label>
+                        <input type="date" id="date" class="trip-info">
+                    </div>
+                    <div class="endDate">
+                        <label for="endDate">Returning</label>
+                        <input type="date" id="endDate" class="trip-info">
+                    </div>
+                    <div class="vertical-center">
+                        <button id="generate" type="submit">Generate</button>
+                    </div>
+                </section>
+
+                <figure id="image">
+                    <img src='' alt="" class="responsive">
+                    <figcaption></figcaption>
+                </figure>
+
+                <section class="entry">
+                    <div id="city"></div>
+                    <div id="departing"></div>
+                    <div id="daysAway"></div>
+                    <div id="weather"></div>
+                </section>
+            </main><!-- end main-->
+
+            <footer>
+                License: Free for non-commercial use.
+            </footer><!-- end footer-->
+        </div><!-- end #app-->
+        
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator){
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () =>{
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+        
+    </body>
+</html>
